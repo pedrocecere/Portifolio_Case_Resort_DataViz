@@ -5,11 +5,10 @@ Projeto de análise de dados para um Resort
 ![[[https__img migalhas com br__SL__gf_base__SL__empresas__SL__MIGA__SL__imagens__SL__2023__SL__02__SL__15__SL__d90cd13d-88c0-4f57-9aa5-c7878b109c0b jpg _PROC_CP65]](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k0-dpN0QUyCWO8IjsvHIBtsMudn7XXcqfw&s)(https://github.com/user-attachments/assets/bff56a72-8584-40f8-b0a9-412dd4347128)](https://digital.ihg.com/is/image/ihg/intercontinental-bali-9719167392-2x1)
 # 1. Descrição do projeto
 
-- O projeto de análise de dados para o resort tem como objetivo identificar e implementar estratégias que aumentem as receitas e reduzam a taxa de cancelamento de reservas. Dada a crescente competitividade no setor hoteleiro e as mudanças nas preferências dos consumidores, torna-se fundamental utilizar análises de dados para entender o comportamento dos clientes e otimizar as operações do resort.
+O projeto de análise de dados para o resort tem como objetivo identificar e implementar estratégias que aumentem as receitas e reduzam a taxa de cancelamento de reservas. Dada a crescente competitividade no setor hoteleiro e as mudanças nas preferências dos consumidores, torna-se fundamental utilizar análises de dados para entender o comportamento dos clientes e otimizar as operações do resort.
 
-- O processo de análise começa com uma pesquisa de mercado, visando compreender os principais fatores que impulsionam o crescimento do setor, os KPIs relevantes e os problemas sistêmicos enfrentados. Com essa base, realiza-se uma análise exploratória dos dados, que permite mapear possíveis lacunas e oportunidades de melhoria. Em seguida, será construída uma árvore de hipóteses para investigar as causas dos cancelamentos e identificar potenciais alavancas para o aumento da receita anual.
+O processo de análise começa com uma pesquisa de mercado, visando compreender os principais fatores que impulsionam o crescimento do setor, os KPIs relevantes e os problemas sistêmicos enfrentados. Com essa base, realiza-se uma análise exploratória dos dados, que permite mapear possíveis lacunas e oportunidades de melhoria. Em seguida, será construída uma árvore de hipóteses para investigar as causas dos cancelamentos e identificar potenciais alavancas para o aumento da receita anual.
 
-Esta abordagem estruturada permitirá ao resort tomar decisões informadas, aprimorar a experiência do cliente e fortalecer sua posição no mercado.
 
 # 2. Problema de negócio e objetivos
 ### 2.1 Qual o problema de negócio deste projeto?
