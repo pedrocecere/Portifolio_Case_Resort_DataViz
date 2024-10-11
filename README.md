@@ -40,12 +40,17 @@ Ao abordar esses desafios, o projeto busca não apenas reverter a tendência de 
   
 # 3. Pipeline de solução
 
-- Entendendo o problema de negócio
-- Análise exploratória dos dados
-- Preparação e limpeza dos dados
-- Modelagem 
-- Criação dos visuais e indicadores
-- Montagem do storytelling para apresentação aos stackholders
+- **Entendimento do Problema de Negócio**: Nesta etapa inicial, buscamos compreender profundamente os desafios enfrentados pelo resort, incluindo o aumento da taxa de cancelamento e a queda na receita. Isso envolve a definição clara dos objetivos do projeto e a identificação dos principais fatores que podem influenciar o comportamento dos clientes e os resultados financeiros.
+
+- **Análise Exploratória dos Dados**: Realizamos uma análise detalhada dos dados disponíveis, investigando padrões de comportamento, sazonalidade e variáveis que possam impactar os cancelamentos de reservas e o desempenho financeiro. Essa análise preliminar nos ajudará a identificar possíveis correlações e hipóteses a serem validadas.
+
+- **Preparação e Limpeza dos Dados**: Os dados coletados passam por um processo de preparação, que inclui limpeza, tratamento de valores ausentes e formatação para garantir sua integridade e usabilidade nas próximas etapas. Dados consistentes são essenciais para garantir a qualidade das análises e modelos subsequentes.
+
+- **Modelagem dos Dados**: Nesta fase, utilizamos modelos estatísticos para testar as hipóteses levantadas durante a análise exploratória. O objetivo é identificar padrões e variáveis preditoras que possam explicar o comportamento de cancelamento e destacar oportunidades de aumento de receita.
+
+- **Criação de Visuais e Indicadores**: Com base nas análises e modelagens, são desenvolvidos visuais claros e indicadores-chave (KPIs) que permitam uma visão objetiva dos resultados obtidos. Esses elementos serão utilizados para apresentar os principais insights de forma acessível e compreensível.
+
+- **Storytelling e Apresentação aos Stakeholders**: Por fim, os insights obtidos serão estruturados em uma narrativa clara e coerente, alinhada aos objetivos de negócio do resort. A apresentação focará em fornecer recomendações práticas e estratégicas para os stakeholders, ajudando na tomada de decisões embasadas.
 
 # 4. Tecnologias e ferramentas
 
