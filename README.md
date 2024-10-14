@@ -1,6 +1,3 @@
-# Portifolio_Case_Resort_DataViz
-Projeto de análise de dados para um Resort
-
 # ANÁLISE PARA ALAVANCAGEM DE RECEITA - RESORT
 ![[[https__img migalhas com br__SL__gf_base__SL__empresas__SL__MIGA__SL__imagens__SL__2023__SL__02__SL__15__SL__d90cd13d-88c0-4f57-9aa5-c7878b109c0b jpg _PROC_CP65]](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6k0-dpN0QUyCWO8IjsvHIBtsMudn7XXcqfw&s)(https://github.com/user-attachments/assets/bff56a72-8584-40f8-b0a9-412dd4347128)](https://digital.ihg.com/is/image/ihg/intercontinental-bali-9719167392-2x1)
 # 1. Descrição do projeto
