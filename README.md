@@ -120,6 +120,8 @@ Após a análise inicial da base de dados e possíveis insights, formulei alguma
 - **Oportunidades:**  
   - Estruturar campanhas com desconto para reservas feitas com maior antecedência (relacionado à H3).
 
+<img src="imagens/Captura de tela 2024-10-22 211408.png" alt="Produtos" width="700" />
+
 #### H2: Clientes Recorrentes Têm Menor Taxa de Cancelamento
 - **Conclusão:** Verdadeiro. Clientes recorrentes tendem a gostar do serviço e se programam melhor.
 
