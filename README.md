@@ -56,51 +56,108 @@ Ao abordar esses desafios, o projeto busca não apenas reverter a tendência de 
 - Power BI Helper
 - Excel
 
-# 5. Principais insights retirados do projeto
+# 5. Modelagem e resultados
 
-- Quantidade de quartos por residência:
-Existe uma média de cerca de 6,28 quartos por habitação (variável numero_medio_quartos_por_residencia).
-- Taxa de criminalidade e Proporção de lotes:
-Há uma variação muito grande para a taxa de criminalidade (variável taxa_criminalidade), pois podemos ver que a taxa de criminalidade mais baixa é de 0,006, enquanto a mais alta é de 88,97. Provavelmente são valores outliers, pois são muito diferentes da mediana e até 75% do quarti. O mesmo comportamento se percebe na variável de proporção de lotes.
-- Influência de Desabrigados: 
-Bairros com maior número de desabrigados apresentam menor taxa de ocupação de residências, indicando uma relação inversa entre a quantidade de desabrigados e a ocupação dos imóveis.
-- Correlação entre variáveis: 
-Observamos uma correlação significativa entre as variáveis taxa de poluição e proporção de empresas. A variável taxa de poluição também apresenta uma alta correlação positiva com a idade média das residências e uma correlação negativa significativa com a distância ao centro.
-A proporção de empresas tem uma alta correlação com o imposto residencial.
-A taxa de ocupação mostra uma alta correlação com o número médio de quartos por residência e uma correlação negativa significativa com a taxa de desabrigados.
-- Performance do Modelo: 
-O modelo de regressão apresentou boa performance com um coeficiente R² acima de 0.8, mas ajustes foram necessários para atender às suposições de homocedasticidade, normalidade dos resíduos e independência dos erros.
+## Primeira Etapa: Validação dos Dados e Overview
 
-# 6. Modelagem
+Comecei pela validação dos dados fornecidos pela equipe de gestão do resort. Após o entendimento do problema de negócio exposto nos tópicos acima, foi necessário identificar o motivo dos cancelamentos de reservas e averiguar possíveis alavancas na receita anual.
 
-### 6.1 Carregamento dos Dados:
-   - Os dados deste estudo foram carregados através de uma arquivo csv que se encontra na pasta deste repositório. Os pacotes foram instalados e importados para utilização no modelo.
+Com o problema de negócio em mãos e a base de dados disponibilizada, iniciei uma análise exploratória para validar os dados presentes na base, uma espécie de overview dos dados. Tracei algumas perguntas nesta primeira etapa, que compartilho aqui:
 
-### 6.2 Exploração e Limpeza dos Dados:
-   - Análise de correlação inicial indicou a presença de outliers que afetaram as correlações observadas.
-   - A análise exploratória iniciou verificando a presença ou não de valores nulos no dataset, eles representam problemas para testes estatísticos e modelos de machine learning.
-   - Foi feita uma análise das estatíticas gerais do conjunto de dados utilizando o método describe(), desta análise podemos entender algumas variáveis provavelmente contém outliers.
-   - Plotamos a distribuição da variável dependente (taxa de ocupação), percebemos que existe uma assimatria. Foi utilizado o método skewness para verificar a assimetria de todo conjunto. Essa assimetria foi corrigida utilizando a tranformação de log(), para deixar os dados na mesma escala.
-   - Após ajustar nossa variável alvo partimos para as análises bivariadas, através da matriz de correlação percebemos que algumas variáveis tinham forte correlação, o que significa um problema para nosso modelo estatístico.
-   - Verificamos todas as correlações altas (entre 0.59 e 0.99), sejam positivas ou negativas
-   - Mesmo sabendo do problema destas variáveis, deixamos elas no conjunto para provocar o erro e avaliar o resultado.  
+### Overview - Entendimento do Negócio
 
-### 6.3 Validações e métodos:
-   - **Variance Inflation Factor (VIF)**: Utilizaremos o Variance Inflation Factor (VIF), para verificar se há multicolinearidade nos dados. O Variance Inflation Factor (VIF) é uma medida que     quantifica o quanto a variância de um estimador de regressão (coeficiente) é aumentada devido à multicolinearidade na regressão múltipla. A multicolinearidade ocorre quando há correlações altas   entre duas ou mais variáveis explicativas (independentes) em um modelo de regressão, o que pode dificultar a estimação dos coeficientes da regressão com precisão.
-   - **Standar Scaler**: Utilizamos o StandarScaler() para padronizar a escala dos dados, pois nosso modelo de Regressão Linear supões que os dados estejam na mesma escala.
+1. **O que é um resort?**  
+   Estabelecimento de hospedagem que oferece experiência de férias completa (diversos serviços de lazer e entretenimento incluídos, o hóspede tem todas as necessidades atendidas em um só local).
 
-### 6.4 Testes Estatísticos Aplicados:
-   - **Teste de Regressão Linear**: Utilizamos o modelo de Regressão Lienar do statsmodels para verificar a relação multipla entre variáveis do dataset.
-   - **Teste de Linearidade:** Verificação se a relação entre variáveis independentes e dependentes é linear. Utilização do teste linear_rainbow.
-   - **Teste de Independência dos Erros:** Aplicação do Teste de Durbin-Watson para verificar autocorrelação nos resíduos.
-   - **Teste de Homocedasticidade:** Aplicação do Teste de Goldfeld-Quandt para verificar se a variabilidade dos resíduos é constante.
-   - **Teste de Normalidade dos Resíduos:** Criação de QQ Plot e aplicação do Teste de Shapiro-Wilk para verificar se os resíduos seguem uma distribuição normal.
+2. **Qual a diferença entre um resort e um hotel?**  
+   O foco principal de um hotel é ser uma acomodação para dormir, enquanto o resort conta com diversos serviços adicionais e acomodações mais sofisticadas.
 
-### 6.5 Regras Aplicadas e Resultado do Modelo:
-   - Variáveis com alta multicolinearidade foram removidas para melhorar a precisão do modelo.
-   - Variáveis com valor-p maior que 0.05 foram removidas, focando apenas nas variáveis com significância estatística.
-   - O modelo final é uma regressão linear múltipla ajustada para satisfazer a maioria das suposições, com algumas limitações reconhecidas.
-   - Obtivemos um R-squared de aproximadamente 0.8, o que indica que nossas variáveis independentes explicam 80% da variável dependente Taxa de Ocupação, este é um resultado considerado satisfatório para o escopo do projeto.
+3. **O que é importante para uma empresa de resort?**  
+   - Experiência do cliente (vínculo com a sua finalidade) como atendimento, qualidade das instalações e serviços de lazer.
+   - Entender as preferências dos clientes (para oferecer o melhor serviço).
+   - Capacitação de funcionários (para melhor atender os clientes).
+   - Localização (tem que ser atraente para os clientes).
+   - Marketing e parcerias (divulgação).
+   - Reputação online (indicações x reclamações - pode impactar na demanda).
+   - Fidelização de clientes.
+   - Diversificação de receita por meio de serviços e pacotes oferecidos, inclusive eventos corporativos.
+   - Gestão operacional (controle de custos e maximização de demanda por meio de estratégias comerciais).
 
-![Captura de tela 2024-09-09 101850](https://github.com/user-attachments/assets/9432a7c9-356e-431e-b84f-a1d7533a1289)
+### Validação dos Dados
+
+Segui então para a validação dos dados e cheguei a algumas conclusões:
+
+- **Receita**
+
+1. **Por que existem valores negativos na `receita_por_noite`?**  
+   Foi observado que se trata de um registro referente a um cliente recorrente, que pode estar atrelado a algum desconto. Mantido na visão, pois não tem grande impacto no resultado final.
+
+2. **Por que temos tantas reservas sem pagamento (valor R$ 0)?**  
+   Corresponde a aproximadamente 96% de todas as reservas e 99% das reservas confirmadas, ou seja, tem impacto direto no resultado dessa análise como um todo. Não há informações de desconto, e o maior volume é referente a clientes não recorrentes.
+
+3. **Oportunidades:**  
+   Buscar mais informações sobre os motivos de termos um volume tão alto de reservas sem pagamento. Pode ser um erro ou um movimento estratégico de marketing e comercial para aumentar o volume de clientes e vendas, especialmente para trazer novos clientes para a base com promoções de primeira reserva. Contudo, pode não estar sendo considerado o impacto financeiro dessas campanhas.
+
+- **Desdobramento por Agência**
+
+1. **Por que existem reservas sem informação de agência?**  
+   Dos 8.058 itens sem a informação de agência de turismo vinculada, a maioria desses itens em branco está relacionada a segmentos diferentes de agências (Corporativo, Direta e Grupos).
+
+- **Reservas e Estadia**
+
+1. **Por que temos reservas que não informam a quantidade de adultos, crianças e bebês?**  
+   É necessário confirmar se é um erro, pois há 13 reservas nessa situação, que podem estar distribuídas entre as demais categorias de perfil. Não representa um impacto significativo e, por isso, não foi retirado da análise.
+
+## Hipóteses e Oportunidades de Melhoria
+
+Após a análise inicial da base de dados e possíveis insights, formulei algumas hipóteses para embasar a análise.
+
+### Hipóteses
+
+#### H1: Redução do Tempo de Antecedência entre a Reserva e o Check-in Diminui a Taxa de Cancelamentos?
+- **Conclusão:** Falso, a redução do tempo de antecedência aumenta a taxa de cancelamentos (devido à falta de planejamento).
+
+- **Oportunidades:**  
+  - Estruturar campanhas com desconto para reservas feitas com maior antecedência (relacionado à H3).
+
+#### H2: Clientes Recorrentes Têm Menor Taxa de Cancelamento
+- **Conclusão:** Verdadeiro. Clientes recorrentes tendem a gostar do serviço e se programam melhor.
+
+- **Oportunidades:**  
+  - Para não recorrentes: Implementar comunicações direcionadas para lembrar da reserva.  
+  - Para clientes recorrentes: Criar campanhas de desconto para a segunda reserva.
+
+#### H3: Reservas com Alimentação Têm Menor Taxa de Cancelamento
+- **Conclusão:** Falso, reservas com alimentação apresentam maior taxa de cancelamento.
+
+- **Oportunidades:**  
+  - Vincular à campanha de H1 (oferecer um upgrade de alimentação para reservas confirmadas até 30 dias antes do check-in).
+
+#### H4: Reservas com Crianças Têm Maior Taxa de Cancelamento
+- **Conclusão:** Verdadeiro.
+
+- **Oportunidades:**  
+  - Oferecer serviços voltados para crianças (ex.: atividades do tipo "kids", como em hotéis na Disney, onde as crianças pedem para ir e influenciam os pais).
+
+#### H5: A Presença de Pedidos Especiais Está Associada a uma Maior Taxa de Cancelamento
+- **Conclusão:** Falso, pedidos especiais têm uma taxa de cancelamento menor, e clientes recorrentes têm ainda menos cancelamentos (vantagem: o cliente já conhece o serviço).
+
+#### H6: Quartos Mais Baratos Têm Menor Taxa de Cancelamento
+- **Conclusão:** Verdadeiro, quartos mais caros apresentam maiores taxas de cancelamento (ex.: categorias H e G).
+
+- **Oportunidades:**  
+  - Implementar ofertas de upsell para quartos mais baratos (ex.: upgrade do quarto X para o quarto Y com desconto de 5%), destacando os benefícios da troca (ex.: quarto mais confortável).
+
+### Oportunidades Adicionais para Reduzir Cancelamentos
+
+1. **Revisar Políticas de Reserva:**  
+   Considerar que reservas realizadas com menos de 7 dias de antecedência precisam ter valores pagos no momento da reserva, protegendo parte da receita em casos de cancelamento ou no-show.
+
+2. **Estruturar um Programa de Fidelidade:**  
+   Oferecer benefícios para clientes que realizarem 5 ou 10 reservas sem cancelamento.
+
+3. **Revisar Contratos com Agências de Turismo:**  
+   Avaliar o aumento das taxas para agências com maior taxa de cancelamento, incentivando uma melhor gestão das reservas.
+
+   
 
