@@ -29,16 +29,6 @@ A principal tarefa deste projeto é identificar as causas subjacentes desse cen�
 - Fornecer uma compreensão mais clara dos fatores que afetam a taxa de cancelamento de reservas.
 - Ajudar na formulação de estratégias que alavanquem a receita anual do resort.
 
-### 2.3 Quais são os conceitos importantes a conhecer no contexto de ocupação imobiliária, mobilidade urbana, saneamento e assuntos correlatos?
-
-**Conceitos Importantes:** (INSERIR AQUI OS CONCEITOS DOS INDICADORES RELEVANTES PARA O SEGMENTO HOTELEIRO)
-
-Ao abordar esses desafios, o projeto busca não apenas reverter a tendência de queda na receita, mas também posicionar o resort como uma opção preferencial para os hóspedes, promovendo a fidelização e a satisfação do cliente.
-
-- **Taxa de Ocupação de Imóveis:** Percentual de imóveis ocupados em relação ao total de imóveis disponíveis, influenciado por fatores como localização, tamanho e condições do imóvel.
-- **Mobilidade Urbana:** Relaciona-se à facilidade com que os residentes podem se deslocar dentro da cidade, impactando a atratividade de uma localização para ocupação de imóveis.
-- **Saneamento:** Refere-se à infraestrutura para gestão de resíduos e fornecimento de água limpa, afetando diretamente a qualidade de vida e, consequentemente, a taxa de ocupação dos imóveis.
-
 ## 3. Pipeline de Solução
 
 - **Entendimento do Problema de Negócio:** Nesta etapa inicial, buscamos compreender profundamente os desafios enfrentados pelo resort, incluindo o aumento da taxa de cancelamento e a queda na receita. Isso envolve a definição clara dos objetivos do projeto e a identificação dos principais fatores que podem influenciar o comportamento dos clientes e os resultados financeiros.
