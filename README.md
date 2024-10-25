@@ -12,9 +12,9 @@ O processo de análise começa com uma pesquisa de mercado, visando compreender 
 
 ### 2.1 Qual o problema de negócio deste projeto?
 
-No atual cenário de intensa competição por market share, a ascensão de plataformas online para a venda de reservas e a mudança no comportamento do público-alvo em resposta à ampla gama de opções disponíveis, o resort enfrenta desafios significativos. A taxa de cancelamento de reservas tem aumentado, enquanto a receita anual apresenta uma tendência de queda.
+No atual cenário de intensa competição por market share, a ascensão de plataformas online para a venda de reservas e a mudança no comportamento do público-alvo em resposta à ampla gama de opções disponíveis, o resort enfrenta desafios significativos. A taxa de cancelamento de reservas tem aumentado, enquanto a receita anual apresenta uma desaceleração do crescimento.
 
-### 2.2 Quais são os objetivos e benefícios do projeto?
+### 2.2 Quais são os objetivos do projeto?
 
 A principal tarefa deste projeto é identificar as causas subjacentes desse cenário preocupante. Para isso, nossos objetivos são:
 
@@ -23,11 +23,6 @@ A principal tarefa deste projeto é identificar as causas subjacentes desse cen�
 - Analisar os fatores que contribuem para o aumento da taxa de cancelamento, entendendo os motivos específicos que levam os hóspedes a cancelar suas reservas.
 - Identificar oportunidades para melhorar a experiência do cliente, garantindo que o resort se destaque em um mercado cada vez mais competitivo.
 - Desenvolver estratégias que aumentem a receita anual, explorando novas abordagens de marketing, pacotes e promoções que atendam às necessidades e preferências do público-alvo.
-
-**Benefícios:**
-
-- Fornecer uma compreensão mais clara dos fatores que afetam a taxa de cancelamento de reservas.
-- Ajudar na formulação de estratégias que alavanquem a receita anual do resort.
 
 ## 3. Pipeline de Solução
 
