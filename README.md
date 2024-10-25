@@ -48,7 +48,7 @@ A principal tarefa deste projeto é identificar as causas subjacentes desse cen�
 
 ## 5. Modelagem e Resultados
 
-### Primeira Etapa: Validação dos Dados e Overview
+## 5.1 Validação dos Dados e Overview
 
 Iniciei pela validação dos dados fornecidos pela equipe de gestão do resort. Após o entendimento do problema de negócio exposto nos tópicos acima, foi necessário identificar o motivo dos cancelamentos de reservas e averiguar possíveis alavancas na receita anual.
 
@@ -98,7 +98,7 @@ Segui então para a validação dos dados e cheguei a algumas conclusões:
   1. **Por que temos reservas que não informam a quantidade de adultos, crianças e bebês?**  
   É necessário confirmar se isso é um erro, pois há 13 reservas nessa situação, que podem estar distribuídas entre as demais categorias de perfil. Esse dado não representa um impacto significativo e, por isso, não foi retirado da análise.
 
-## Hipóteses e Oportunidades de Melhoria
+## 5.2 Hipóteses e Oportunidades de Melhoria
 
 Após a análise inicial da base de dados e possíveis insights, formulei algumas hipóteses para embasar a análise.
 
@@ -141,7 +141,7 @@ Após a análise inicial da base de dados e possíveis insights, formulei alguma
 3. **Revisar Contratos com Agências de Turismo:**  
    Avaliar o aumento das taxas para agências com maior taxa de cancelamento, incentivando uma melhor gestão das reservas.
 
-### Receita
+## 5.3 Receita
 
 ### Qual é a Tendência da Receita? Está Aumentando ou Caindo?
 - Observou-se que a receita cai entre os meses de setembro a novembro, aumenta em dezembro, cai em janeiro e cresce de fevereiro a agosto. Apesar das sazonalidades observadas, durante todo o período houve um aumento na receita.
@@ -170,7 +170,7 @@ Após a análise inicial da base de dados e possíveis insights, formulei alguma
 - Há um volume muito alto de cancelamentos sem pagamento prévio.
 - O Produto A, que é o mais barato, também é o que mais apresenta cancelamentos.
 
-## Oportunidades
+### Oportunidades
 
 - **Revisar Políticas de Cancelamento:**  
   - Reavaliar as políticas para reduzir o número de reservas canceladas, com foco nos segmentos Grupos e AT Online, que apresentam o maior índice de cancelamentos.
@@ -178,7 +178,7 @@ Após a análise inicial da base de dados e possíveis insights, formulei alguma
 - **Oferecer Incentivos para Manter a Reserva:**  
   - Implementar flexibilização de tarifas e ofertas de última hora para incentivar a manutenção das reservas.
 
-### Análise das Possíveis Alavancas de Crescimento da Receita
+## 5.4 Alavancas de Crescimento da Receita
 
 ### Reservas e Estadia
 
