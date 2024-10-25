@@ -58,7 +58,7 @@ Ao abordar esses desafios, o projeto busca não apenas reverter a tendência de 
 
 # 5. Modelagem e resultados
 
-## Primeira Etapa: Validação dos Dados e Overview
+### Primeira Etapa: Validação dos Dados e Overview
 
 Comecei pela validação dos dados fornecidos pela equipe de gestão do resort. Após o entendimento do problema de negócio exposto nos tópicos acima, foi necessário identificar o motivo dos cancelamentos de reservas e averiguar possíveis alavancas na receita anual.
 
@@ -161,5 +161,131 @@ Após a análise inicial da base de dados e possíveis insights, formulei alguma
 3. **Revisar Contratos com Agências de Turismo:**  
    Avaliar o aumento das taxas para agências com maior taxa de cancelamento, incentivando uma melhor gestão das reservas.
 
-   
+## Receita
+
+### Qual é a Tendência da Receita? Está Aumentando ou Caindo?
+- Observou-se que a receita cai entre os meses de setembro a novembro, aumenta em dezembro, cai em janeiro e cresce de fevereiro a agosto. Apesar das sazonalidades observadas, durante todo o período houve um aumento na receita.
+
+### Qual é o Ticket Médio de Estadia (Receita Média por Estadia)?
+- R$ 302,13.
+
+- **Oportunidades:**  
+  - Explorar e melhorar a experiência do segmento AT Online, que apresenta o maior volume de receitas, reservas e cancelamentos. O foco seria reduzir cancelamentos e aumentar a receita.  
+  - Analisar padrões de cancelamento, ajustar políticas e atendimento, além de criar campanhas de vendas direcionadas a esse público (com maior potencial de consumo).
+
+### Qual é o Segmento que Mais Contribui com a Receita?
+- O segmento AT Offline é o que mais contribui, com a normalidade das reservas variando entre R$ 157 e R$ 710 (analisando apenas a receita de reservas confirmadas).
+
+### Outros Insights sobre a Receita
+1. **Receita:**  
+   - O segmento "2-0-0" apresenta o maior volume de reservas, mas não é o perfil responsável pela maior contribuição em termos de receita.
+
+## Cancelamentos
+
+### Qual é a Tendência dos Cancelamentos? Estão Aumentando ou Diminuindo?
+- Observou-se que os cancelamentos estão aumentando ao longo do período de análise e acompanham o aumento da receita.
+- Existem dois tipos de cancelamentos, mas o "no-show" tem pouca representatividade, por isso, não separei análises específicas para esse tipo.
+
+### Qual Segmento Mais Cancela?
+- O segmento que mais cancela é o AT Online.
+- Há um volume muito alto de cancelamentos sem pagamento prévio.
+- O Produto A, que é o mais barato, também é o que mais apresenta cancelamentos.
+
+## Oportunidades
+
+- **Revisar Políticas de Cancelamento:**  
+  - Reavaliar as políticas para reduzir o número de reservas canceladas, com foco nos segmentos Grupos e AT Online, que apresentam o maior índice de cancelamentos.
+
+- **Oferecer Incentivos para Manter a Reserva:**  
+  - Implementar flexibilização de tarifas e ofertas de última hora para incentivar a manutenção das reservas.
+
+
+## Análise das Possíveis Alavancas de Crescimento da Receita
+
+### Reservas e Estadia
+
+### Qual é o Tempo Médio Entre a Reserva e a Atualização de Status (Confirmada ou Cancelada)?
+- **Reservas Confirmadas:** Normalidade entre 8 (Q1) e 138 (Q3) dias, com mediana de 43 dias.
+- **Reservas Canceladas:** Normalidade entre 6 (Q1) e 88 (Q3) dias, com mediana de 26 dias.
+
+### Qual é o Tempo Médio Entre a Reserva e a Estadia (Check-in)?
+- **Reservas Confirmadas:** Normalidade entre 5 (Q1) e 138 (Q3) dias, com mediana de 38 dias.
+- **Reservas Canceladas:** Normalidade entre 54 (Q1) e 235 (Q3) dias, com mediana de 102 dias.
+- Observou-se que quem confirma faz o processo de reserva antes daqueles que cancelam.
+
+### Qual Segmento Cancela Mais Próximo da Reserva?
+- O segmento Corporativo tende a cancelar mais próximo da data de reserva.
+
+### Qual é o Tempo Médio de Estadia?
+- **Geral:** Normalidade entre 2 (Q1) e 6 (Q3) dias, com mediana de 3 dias.
+- **Diferença por Segmento:**
+  - **Maior Estadia:** AT Offline (mediana de 7 dias).
+  - **Menor Estadia:** Corporativo (mediana de 1 dia).
+
+### Existe Diferença Entre o Tempo Médio de Estadia por Perfil de Cliente?
+- **Sim.**
+  - **Maior Estadia:** Perfil 2-0-0 (mediana de 4 dias).
+  - **Menor Estadia:** Perfil 1-2-1.
+
+## Demanda
+
+### Existe um Período de Maior Demanda?
+- **Dia do Mês:** 12 (check-in) e 29 (check-out).
+- **Dia da Semana:** Sábado (check-in) e Domingo (check-out).
+- **Meses de Alta Demanda:** Abril, Maio e Outubro (acima do percentil 75 e padrão anual de alta).
+
+- **Oportunidades:**
+  - Aumentar tarifas durante os períodos de alta demanda (impacto: + preço + receita).
+  - Incentivar a venda de serviços adicionais (upgrade de quarto, pacotes de alimentação) para perfis com maior propensão a gastar, como 2-0-0 (casais - maior ticket médio).
+
+### Qual é o Perfil de Cliente que Mais Consome Nossos Serviços?
+1. **Dois Adultos:** Pareto 70% com 27.942 reservas, sendo o maior volume no segmento AT Online (13.107 reservas).
+2. **Um Adulto:** Pareto 87% com 6.923 reservas, sendo o maior volume no segmento AT Online (1.762 reservas).
+   - Observação: O maior volume de reservas é sem filhos, indicando preferência por instalações que atendam a esse público.
+
+### Qual é o Ticket Médio de Estadia por Perfil de Cliente?
+1. **Dois Adultos:** R$ 309,73.
+2. **Um Adulto:** R$ 136,60.
+   - Observação: Casais tendem a gastar mais (maior ticket).
+
+### Qual é o Nosso Produto Mais Vendido?
+- **Produto A (mais barato):** Indicativo de que o fator determinante para a compra é o preço.
+
+### Qual é o Segmento que Mais Consome Nossos Serviços?
+- **AT Online:** Preferência por quarto do tipo A e alimentação do tipo BB.
+
+### Existe Diferença Entre o Produto Mais Vendido por Segmento?
+- **Sim.**
+  - **Tipo de Quarto:**
+    - Quarto A: 23.279 reservas (9.002 AT Online).
+    - Quarto D: 7.416 reservas (3.512 AT Online).
+    - Quarto E: 4.960 reservas (2.743 AT Online).
+  - **Alimentação:**
+    - BB: 29.840 reservas (14.757 AT Online).
+    - HB: 8.027 reservas (2.901 AT Online).
+
+### Existe Diferença Entre o Produto Mais Vendido por Tipo de Cliente?
+- **Sim.**
+  - **Tipo de Quarto:**
+    - Quarto A: 23.279 reservas (15.976 perfil 2-0-0).
+    - Quarto D: 7.416 reservas (6.287 perfil 2-0-0).
+    - Quarto E: 4.960 reservas (4.277 perfil 2-0-0).
+  - **Alimentação:**
+    - BB: 29.840 reservas (20.538 perfil 2-0-0).
+    - HB: 8.027 reservas (5.942 perfil 2-0-0).
+
+- **Oportunidades:**
+  - Incentivar a venda de serviços adicionais para perfis com maior propensão a gastar, como 2-0-0 (casais - maior ticket médio), através de campanhas de marketing.
+
+# Conclusão Final
+
+A análise dos dados revela um problema de qualidade no serviço prestado, evidenciado pela baixa taxa de retenção, mesmo entre clientes com maior volume de reservas. Isso sugere uma dificuldade em fidelizar os hóspedes, o que pode estar impactando diretamente o crescimento sustentável da receita.
+
+Além disso, identificou-se que o principal fator que atrai clientes para este resort é o preço. Há uma preferência clara por reservas em quartos de menor custo, como o quarto A, o que sugere que a proposta de valor está mais alinhada a um perfil de hotel econômico do que a um resort de luxo. O padrão de consumo não aponta para uma demanda por serviços adicionais de alto valor, como massagens ou eventos de lazer, nem há sinais de uma forte atração para famílias.
+
+### Oportunidades de Melhoria
+
+Para abordar essas questões e melhorar a experiência do cliente, recomenda-se a implementação de uma pesquisa de Net Promoter Score (NPS) para avaliar a satisfação dos hóspedes e identificar pontos de melhoria. Além disso, a análise das reclamações em canais como o "Reclame Aqui" pode fornecer insights valiosos para ajustes nos processos e aprimoramento dos serviços oferecidos.
+
+Essas iniciativas podem ajudar a alinhar a proposta de valor do resort às expectativas dos clientes, além de aumentar a retenção e a fidelização, melhorando a qualidade percebida e, consequentemente, a receita.
 
